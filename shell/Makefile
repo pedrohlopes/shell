@@ -16,6 +16,7 @@ $(TARGET): $(TARGET).c
 
 $(TARGET2): $(TARGET2).c
 	$(CC) $(CFLAGS) -o $(TARGET2) $(TARGET2).c
+	
 clean:
 	$(RM) $(TARGET)
 	$(RM) $(TARGET2)
