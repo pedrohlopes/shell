@@ -9,8 +9,8 @@
 #include <ctype.h>
 // definindo tamanho máximo das strings e
 // número máximo de argumentos
-#define BUFFERSIZE 100
-#define MAX_ARGS 100
+#define BUFFERSIZE 1000
+#define MAX_ARGS 1000
 
 /* Variável global para monitorar os sinais do usuário.
  Foi utilizada uma variável global devido a necessidade
