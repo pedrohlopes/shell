@@ -9,8 +9,8 @@
 #include <ctype.h>
 // definindo tamanho máximo das strings e
 // número máximo de argumentos
-#define BUFFERSIZE 100
-#define MAX_ARGS 100
+#define BUFFERSIZE 1000
+#define MAX_ARGS 1000
 
 /* Variável global para monitorar os sinais do usuário.
  Foi utilizada uma variável global devido a necessidade
@@ -131,7 +131,7 @@ int main(void)
 			num_args = (int)strtol(args, &check, 10);
 			if (*check != '\n' || num_args < 0)
 			{
-				printf("Erro: O número de argumentos deve ser um valor inteiro positivo.\n");
+				printf("Erro: O número de argumentos deve ser um valor inteiro maior ou igual a zero.\n");
 				return 1;
 			}
 
